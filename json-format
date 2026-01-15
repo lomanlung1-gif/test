@@ -1,0 +1,170 @@
+{
+  "id": 479210288,
+  "name": "Vincent Lo Hong-sui",
+  "nameMatchScore": 96.71,
+  "profileMatchScore": 98,
+  "flags": ["pep", "media", "eddScap", "sip"],
+  "rationale": "INSUFFICIENT_INFORMATION",
+  "reviewResult": "False Hit",
+  "summary": "The profiles from the watchlist and the bank match on several key points, including the name (羅康瑞 / Vincent Lo), date of birth (1948-04-18), and nationality (Hong Kong SAR). The bank's profile indicates that the individual is a Chairman, which aligns with the watchlist's information about his previous roles as a Chairman and Board Member of various state corporations and agencies.",
+  "nodes": [
+    {
+      "id": "node-bank-001",
+      "label": "Vincent Lo (CPAC)",
+      "type": "individual",
+      "bank_data": {
+        "type": ["Person"],
+        "primary_name": ["Vincent Lo Hong-sui"],
+        "aliases": ["羅康瑞", "Lo Hong Sui, Vincent", "Vincent H.S. Lo"],
+        "gender": ["Male"],
+        "date_of_birth": ["1948-04-18"],
+        "citizenship": ["Hong Kong SAR"],
+        "place_of_birth": ["Shanghai, China"],
+        "deceased": ["No"],
+        "id_numbers": [
+          {"type": "Passport", "number": "ABC123"}
+        ],
+        "domicile": [
+          { "location": "Hong Kong SAR", "from": "", "to": "" }
+        ],
+        "addresses": [
+          { "location": "Hong Kong SAR Central ABC Buildings", "from": "", "to": "" }
+        ],
+        "roles_primary_occupation": [
+          { "title": "Chairman", "institution": "Shui On Land Limited", "from": "2006-10-01", "to": "" }
+        ],
+        "roles_history_occupation": [
+          { "title": "Member", "institution": "Chinese People's Political Consultative Conference", "from": "2008-03-01", "to": "2023-03-01" },
+          { "title": "Chairman", "institution": "Hong Kong Trade Development Council", "from": "2000-01-01", "to": "2007-12-31" },
+          { "title": "Board Member", "institution": "China Resources Holdings", "from": "1995-01-01", "to": "2005-12-31" }
+        ],
+        "associated_entities": [
+          { "name": "Shui On Land Limited", "relation": "Chairman" },
+          { "name": "Shui On Holdings", "relation": "Founder" },
+          { "name": "Shanghai Xintiandi", "relation": "Developer" }
+        ],
+        "associated_persons": [
+          { "name": "Lo Hau-man", "relation": "Son" }
+        ],
+        "date_of_incorporation": [],
+        "country_of_incorporation": [],
+        "country_of_affiliation": []
+      },
+      "media_data": null,
+      "watchlist_data": null
+    },
+    {
+      "id": "node-watchlist-001",
+      "label": "Vincent Lo (Watchlist Profile)",
+      "type": "watchlist",
+      "bank_data": null,
+      "media_data": null,
+      "watchlist_data": {
+        "type": ["Person"],
+        "primary_name": ["Vincent Lo Hong-sui"],
+        "aliases": ["羅康瑞", "Lo Hong Sui, Vincent", "Vincent H.S. Lo"],
+        "gender": ["Male"],
+        "date_of_birth": ["1948-04-18"],
+        "citizenship": ["Hong Kong SAR"],
+        "place_of_birth": ["Shanghai, China"],
+        "deceased": ["No"],
+        "id_numbers": [
+          {"type": "Passport", "number": "ABC123"}
+        ],
+        "domicile": [
+          { "location": "Hong Kong SAR", "from": "", "to": "" }
+        ],
+        "addresses": [
+          { "location": "Hong Kong SAR Central ABC Buildings", "from": "", "to": "" }
+        ],
+        "roles_primary_occupation": [
+          { "title": "Chairman", "institution": "Shui On Land Limited", "from": "2006-10-01", "to": "" }
+        ],
+        "roles_history_occupation": [
+          { "title": "Member", "institution": "Chinese People's Political Consultative Conference", "from": "2008-03-01", "to": "2023-03-01" },
+          { "title": "Chairman", "institution": "Hong Kong Trade Development Council", "from": "2000-01-01", "to": "2007-12-31" },
+          { "title": "Board Member", "institution": "China Resources Holdings", "from": "1995-01-01", "to": "2005-12-31" }
+        ],
+        "associated_entities": [
+          { "name": "Shui On Land Limited", "relation": "Chairman" },
+          { "name": "Shui On Holdings", "relation": "Founder" },
+          { "name": "Shanghai Xintiandi", "relation": "Developer" }
+        ],
+        "associated_persons": [
+          { "name": "Lo Hau-man", "relation": "Son" }
+        ],
+        "date_of_incorporation": [],
+        "country_of_incorporation": [],
+        "country_of_affiliation": []
+      }
+    },
+    {
+      "id": "node-media-001",
+      "label": "SCMP Article - Real Estate Development",
+      "type": "media",
+      "bank_data": null,
+      "media_data": {
+        "headline": "Vincent Lo's Shui On Land reports strong Q3 earnings amid property recovery",
+        "content": "Hong Kong property tycoon Vincent Lo Hong-sui's Shui On Land Limited reported a 15% increase in quarterly revenue, driven by renewed demand in Shanghai's commercial real estate sector...",
+        "date": "2024-11-15",
+        "source": "South China Morning Post",
+        "keywords": ["real estate", "Hong Kong", "Shanghai", "property", "Shui On Land"],
+        "url": "https://www.scmp.com/business/article/3456789",
+        "themes":["AML","Bribery"],
+        "summary":"xxxxxxxxxxxxxxxx"
+        
+      },
+      "watchlist_data": null
+    }
+  ],
+  "edges": [
+    {
+      "from": "node-bank-001",
+      "to": "node-watchlist-001",
+      "label": "Name Match",
+      "desc": "Primary name and alias match with high confidence",
+      "type": "match",
+      "field": "name"
+    },
+    {
+      "from": "node-bank-001",
+      "to": "node-watchlist-001",
+      "label": "DOB Match",
+      "desc": "Date of birth matches exactly: 1948-04-18",
+      "type": "match",
+      "field": "year_of_birth"
+    },
+    {
+      "from": "node-bank-001",
+      "to": "node-watchlist-001",
+      "label": "Nationality Match",
+      "desc": "Both profiles indicate Hong Kong SAR citizenship",
+      "type": "match",
+      "field": "nationality"
+    },
+    {
+      "from": "node-bank-001",
+      "to": "node-watchlist-001",
+      "label": "Occupation Match",
+      "desc": "Both profiles indicate Chairman role at Shui On Land",
+      "type": "match",
+      "field": "occupation"
+    },
+    {
+      "from": "node-bank-001",
+      "to": "node-watchlist-001",
+      "label": "Address",
+      "desc": "Bank has specific address; watchlist has different address data",
+      "type": "mismatch",
+      "field": "location"
+    },
+    {
+      "from": "node-bank-001",
+      "to": "node-media-001",
+      "label": "Mentioned In",
+      "desc": "Subject mentioned in SCMP article regarding company earnings",
+      "type": "relationship",
+      "field": "news_mention"
+    }
+  ]
+}
